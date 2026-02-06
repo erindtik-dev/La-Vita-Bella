@@ -10,7 +10,7 @@ const questions = [
         answer: 0
     },
     {
-        question: "Çfarë do të thotë 'La Vita è Bella' në gjuhën angleze?",
+        question: "Çfarë do të thotë 'La Vita è Bella' në gjuhën Shqipe?",
         options: ["Jeta është e Bukur", "Jeta është e Vështirë", "Jeta është e Shkurtër"],
         answer: 0
     },
@@ -143,4 +143,5 @@ function generatePDF() {
     doc.text(`Medalja: ${document.getElementById('medal-display').textContent.split(': ')[1]}`, 20, 100);
     doc.text('Nënshkruar: Mësuesja Kationa Olldashi', 20, 120);
     doc.save('certifikata.pdf');
+
 }
