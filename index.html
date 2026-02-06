@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: La Vita è Bella</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="poster">
+            Fair use, <a href="https://en.wikipedia.org/w/index.php?curid=15892041"></a>
+            <h1>La Vita è Bella 🎥🌟</h1>
+        </div>
+        
+        <div id="name-section">
+            <h2>Shkruaj Emrin Tënd 🍭</h2>
+            <input type="text" id="player-name" placeholder="Emri Yt">
+            <button id="start-btn">Fillo Quiz-in 🎉</button>
+        </div>
+        
+        <div id="quiz-section" class="hidden">
+            <div id="timer">Koha e Mbetur: 15 ⏳</div>
+            <div id="question"></div>
+            <div id="options">
+                <button class="option-btn" data-index="0"></button>
+                <button class="option-btn" data-index="1"></button>
+                <button class="option-btn" data-index="2"></button>
+            </div>
+            <div id="feedback" class="hidden"></div>
+        </div>
+        
+        <div id="result-section" class="hidden">
+            <h2>Quiz-i Përfundoi! 🎊</h2>
+            <p id="score-display"></p>
+            <p id="medal-display"></p>
+            <button id="generate-pdf">Shkarko Certifikatën 📜</button>
+        </div>
+        
+        <div id="certificate" class="hidden">
+            <h2>Certifikatë 🏆</h2>
+            <p id="cert-name"></p>
+            <p id="cert-score"></p>
+            <p id="cert-medal"></p>
+            <p>Nënshkruar: Mësuesi Kationa Olldashi</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
